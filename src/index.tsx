@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import './index.css'
 
+
 import store from './app/store'
 
 const render = () => {
