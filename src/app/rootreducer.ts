@@ -1,8 +1,11 @@
 import { combineReducers } from '@reduxjs/toolkit'
+
 import issuesDisplayReducer from 'features/issuesDisplay/issuesDisplaySlice'
+import repoDetailsReducer from 'features/repoSearch/repoDetailsSlice'
 
 const rootReducer = combineReducers({
-  issuesDisplay: issuesDisplayReducer
+  issuesDisplay: issuesDisplayReducer,
+  repoDetails: repoDetailsReducer
 })
 
 /* whatever gets returned from our root reducer, our type for whenever we 
