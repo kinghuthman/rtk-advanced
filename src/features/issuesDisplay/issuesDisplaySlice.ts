@@ -31,6 +31,7 @@ let initialState: CurrentDisplayState = {
 }
 
 const issuesDisplaySlice = createSlice({
+  // reducer is based off of this name..?
   name: 'issuesDisplay',
   initialState,
   reducers: {
