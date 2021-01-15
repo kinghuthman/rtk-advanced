@@ -33,6 +33,7 @@ export const IssuesListPage = ({
   const { issues, pageCount } = issuesResult
 
   useEffect(() => {
+    // interesting...
     async function fetchEverything() {
       async function fetchIssues() {
         const issuesResult = await getIssues(org, repo, page)
@@ -43,7 +44,7 @@ export const IssuesListPage = ({
         const repoDetails = await getRepoDetails(org, repo)
         setNumIssues(repoDetails.open_issues_count)
       }
-
+      // this is clean as ****
       try {
         await Promise.all([fetchIssues(), fetchIssueCount()])
         setIssuesError(null)
