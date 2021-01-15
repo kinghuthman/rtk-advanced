@@ -45,3 +45,15 @@ export const fetchIssuesCount = (
     dispatch(getRepoDetailsFailed(err.toString()))
   }
 }
+
+// Async Error Handling Logic in Thunks, dispatch if no errors are caught
+
+// let repoDetails
+// try {
+//   repoDetails = await getRepoDetails(org, repo)
+// } catch (err) {
+//   dispatch(getRepoDetailsFailed(err.toString()))
+//   return
+// }
+// dispatch(getRepoDetailsSuccess(repoDetails))
+// }
